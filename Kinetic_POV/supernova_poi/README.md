@@ -50,6 +50,8 @@ Edit `platformio.ini` to customize:
   - When button is pressed, it connects Pin 5 to ground (LOW)
   - When button is released, internal pull-up keeps Pin 5 at HIGH (3.3V)
 - **DotStar Data: Pin 11** (Hardware SPI MOSI)
+  - MOSI = "Master Out, Slave In" (standard SPI terminology)
+  - Teensy (master) outputs data, DotStar LEDs (slave) receive data as input
 - **DotStar Clock: Pin 13** (Hardware SPI SCK)
 
 ## Button Control
