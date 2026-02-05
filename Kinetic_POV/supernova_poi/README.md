@@ -49,8 +49,8 @@ Edit `platformio.ini` to customize:
   - Internal pull-up resistor is enabled in code (INPUT_PULLUP)
   - When button is pressed, it connects Pin 5 to ground (LOW)
   - When button is released, internal pull-up keeps Pin 5 at HIGH (3.3V)
-- DotStar Data: Hardware SPI MOSI
-- DotStar Clock: Hardware SPI SCK
+- **DotStar Data: Pin 11** (Hardware SPI MOSI)
+- **DotStar Clock: Pin 13** (Hardware SPI SCK)
 
 ## Button Control
 

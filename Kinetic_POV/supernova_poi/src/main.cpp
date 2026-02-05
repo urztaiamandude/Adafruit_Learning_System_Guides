@@ -59,6 +59,7 @@ struct ButtonStateTracker {
 } buttonState = {false, false, 0, 0, 0, false};
 
 // LED strip configuration
+// Uses hardware SPI on Teensy 4.1: Pin 11 (MOSI/Data), Pin 13 (SCK/Clock)
 #if defined(LED_DATA_PIN) && defined(LED_CLOCK_PIN)
 Adafruit_DotStar strip = Adafruit_DotStar(NUM_LEDS, LED_DATA_PIN, LED_CLOCK_PIN, DOTSTAR_BGR);
 #else
