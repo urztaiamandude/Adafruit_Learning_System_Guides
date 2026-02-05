@@ -43,7 +43,12 @@ Edit `platformio.ini` to customize:
 
 ## Pin Connections
 
-- Button Input: Pin 5 (with internal pullup enabled)
+- **Button Input: Pin 5**
+  - Connect one side of the momentary button to Pin 5
+  - Connect the other side of the button to **GROUND (GND)**
+  - Internal pull-up resistor is enabled in code (INPUT_PULLUP)
+  - When button is pressed, it connects Pin 5 to ground (LOW)
+  - When button is released, internal pull-up keeps Pin 5 at HIGH (3.3V)
 - DotStar Data: Hardware SPI MOSI
 - DotStar Clock: Hardware SPI SCK
 

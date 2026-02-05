@@ -30,6 +30,8 @@ typedef uint16_t line_t;
 #include "graphics.h"
 
 // Pin configuration
+// Button wiring: Connect button between Pin 5 and GROUND (GND)
+// INPUT_PULLUP mode means pin is HIGH when button is released, LOW when pressed
 #define BUTTON_INPUT_PIN 5
 
 // Timing thresholds in milliseconds
